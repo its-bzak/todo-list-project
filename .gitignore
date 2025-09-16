@@ -205,3 +205,23 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# Node modules
+node_modules/
+
+# IDE/editor settings
+.vscode/
+.idea/
+
+# Environment variables
+.env
+
+# SQLite database (local)
+db.sqlite3
+
+# Django media/static files
+media/
+staticfiles/
+
+# MacOS system files
+.DS_Store
