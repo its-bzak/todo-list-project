@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Task List</h1>
+<p>This is where your tasks will be listed!</p>
+
+
+<ul>
+    {% for task in tasks %}
+    <li>Task Name: {{task.task_name}}<br>
+        Task Details: {{task.task_details}}<br>
+        Is Task Complete: {{task.task_is_complete}}<br>
+        Task Location: {{task.task_location}}</li>
+    {% endfor %}
+</ul>
+
+</body>
+</html>
