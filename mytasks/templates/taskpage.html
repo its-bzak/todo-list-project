@@ -1,18 +1,172 @@
+{% load static %}
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>My Task List</title>
+    <link rel="stylesheet" href="{% static 'mytasks/styles.css' %}">
+</head>
 <body>
-<h1>Task List</h1>
-<p>This is where your tasks will be listed!</p>
+    <div id="sidebar">
+        <h2>Sidebar</h2>
+        <ul>
+            <li>Link 1</li>
+            <li>Link 2</li>
+            <li>Link 3</li>
+        </ul>
+    </div>
 
 
-<ul>
-    {% for task in tasks %}
-    <li>Task Name: {{task.task_name}}<br>
-        Task Details: {{task.task_details}}<br>
-        Is Task Complete: {{task.task_is_complete}}<br>
-        Task Location: {{task.task_location}}</li>
-    {% endfor %}
-</ul>
+<div class="main-content">
+    <div class="top-section">
+        <h1>To-Do List</h1>
+        <p>Here’s your main content area.</p>
+    </div>
+    <div class="calendar-scroll">
+        <div class="bottom-section">
+            <div class="day-column">
+                <div class="hourly-slot"><span class="hour-label">6:00am</span></div>
+                <div class="hourly-slot"><span class="hour-label">7:00am</span></div>
+                <div class="hourly-slot"><span class="hour-label">8:00am</span></div>
+                <div class="hourly-slot"><span class="hour-label">9:00am</span></div>
+                <div class="hourly-slot"><span class="hour-label">10:00am</span></div>
+                <div class="hourly-slot"><span class="hour-label">11:00am</span></div>
+                <div class="hourly-slot"><span class="hour-label">12:00pm</span></div>
+                <div class="hourly-slot"><span class="hour-label">1:00pm</span></div>
+                <div class="hourly-slot"><span class="hour-label">2:00pm</span></div>
+                <div class="hourly-slot"><span class="hour-label">3:00pm</span></div>
+                <div class="hourly-slot"><span class="hour-label">4:00pm</span></div>
+                <div class="hourly-slot"><span class="hour-label">5:00pm</span></div>
+                <div class="hourly-slot"><span class="hour-label">6:00pm</span></div>
+                <div class="hourly-slot"><span class="hour-label">7:00pm</span></div>
+                <div class="hourly-slot"><span class="hour-label">8:00pm</span></div>
+                <div class="hourly-slot"><span class="hour-label">9:00pm</span></div>
+                <div class="hourly-slot"><span class="hour-label">10:00pm</span></div>
+                <div class="hourly-slot"><span class="hour-label">11:00pm</span></div>
+            </div>
+            <div class="day-column">
+                <div class="hourly-slot"><span class="hour-label">6:00am</span></div>
+                <div class="hourly-slot"><span class="hour-label">7:00am</span></div>
+                <div class="hourly-slot"><span class="hour-label">8:00am</span></div>
+                <div class="hourly-slot"><span class="hour-label">9:00am</span></div>
+                <div class="hourly-slot"><span class="hour-label">10:00am</span></div>
+                <div class="hourly-slot"><span class="hour-label">11:00am</span></div>
+                <div class="hourly-slot"><span class="hour-label">12:00pm</span></div>
+                <div class="hourly-slot"><span class="hour-label">1:00pm</span></div>
+                <div class="hourly-slot"><span class="hour-label">2:00pm</span></div>
+                <div class="hourly-slot"><span class="hour-label">3:00pm</span></div>
+                <div class="hourly-slot"><span class="hour-label">4:00pm</span></div>
+                <div class="hourly-slot"><span class="hour-label">5:00pm</span></div>
+                <div class="hourly-slot"><span class="hour-label">6:00pm</span></div>
+                <div class="hourly-slot"><span class="hour-label">7:00pm</span></div>
+                <div class="hourly-slot"><span class="hour-label">8:00pm</span></div>
+                <div class="hourly-slot"><span class="hour-label">9:00pm</span></div>
+                <div class="hourly-slot"><span class="hour-label">10:00pm</span></div>
+                <div class="hourly-slot"><span class="hour-label">11:00pm</span></div>
+            </div>
+            <div class="day-column">
+                <div class="hourly-slot"><span class="hour-label">6:00am</span></div>
+                <div class="hourly-slot"><span class="hour-label">7:00am</span></div>
+                <div class="hourly-slot"><span class="hour-label">8:00am</span></div>
+                <div class="hourly-slot"><span class="hour-label">9:00am</span></div>
+                <div class="hourly-slot"><span class="hour-label">10:00am</span></div>
+                <div class="hourly-slot"><span class="hour-label">11:00am</span></div>
+                <div class="hourly-slot"><span class="hour-label">12:00pm</span></div>
+                <div class="hourly-slot"><span class="hour-label">1:00pm</span></div>
+                <div class="hourly-slot"><span class="hour-label">2:00pm</span></div>
+                <div class="hourly-slot"><span class="hour-label">3:00pm</span></div>
+                <div class="hourly-slot"><span class="hour-label">4:00pm</span></div>
+                <div class="hourly-slot"><span class="hour-label">5:00pm</span></div>
+                <div class="hourly-slot"><span class="hour-label">6:00pm</span></div>
+                <div class="hourly-slot"><span class="hour-label">7:00pm</span></div>
+                <div class="hourly-slot"><span class="hour-label">8:00pm</span></div>
+                <div class="hourly-slot"><span class="hour-label">9:00pm</span></div>
+                <div class="hourly-slot"><span class="hour-label">10:00pm</span></div>
+                <div class="hourly-slot"><span class="hour-label">11:00pm</span></div>
+            </div>
+            <div class="day-column">
+                <div class="hourly-slot"><span class="hour-label">6:00am</span></div>
+                <div class="hourly-slot"><span class="hour-label">7:00am</span></div>
+                <div class="hourly-slot"><span class="hour-label">8:00am</span></div>
+                <div class="hourly-slot"><span class="hour-label">9:00am</span></div>
+                <div class="hourly-slot"><span class="hour-label">10:00am</span></div>
+                <div class="hourly-slot"><span class="hour-label">11:00am</span></div>
+                <div class="hourly-slot"><span class="hour-label">12:00pm</span></div>
+                <div class="hourly-slot"><span class="hour-label">1:00pm</span></div>
+                <div class="hourly-slot"><span class="hour-label">2:00pm</span></div>
+                <div class="hourly-slot"><span class="hour-label">3:00pm</span></div>
+                <div class="hourly-slot"><span class="hour-label">4:00pm</span></div>
+                <div class="hourly-slot"><span class="hour-label">5:00pm</span></div>
+                <div class="hourly-slot"><span class="hour-label">6:00pm</span></div>
+                <div class="hourly-slot"><span class="hour-label">7:00pm</span></div>
+                <div class="hourly-slot"><span class="hour-label">8:00pm</span></div>
+                <div class="hourly-slot"><span class="hour-label">9:00pm</span></div>
+                <div class="hourly-slot"><span class="hour-label">10:00pm</span></div>
+                <div class="hourly-slot"><span class="hour-label">11:00pm</span></div>
+            </div>
+            <div class="day-column">
+                <div class="hourly-slot"><span class="hour-label">6:00am</span></div>
+                <div class="hourly-slot"><span class="hour-label">7:00am</span></div>
+                <div class="hourly-slot"><span class="hour-label">8:00am</span></div>
+                <div class="hourly-slot"><span class="hour-label">9:00am</span></div>
+                <div class="hourly-slot"><span class="hour-label">10:00am</span></div>
+                <div class="hourly-slot"><span class="hour-label">11:00am</span></div>
+                <div class="hourly-slot"><span class="hour-label">12:00pm</span></div>
+                <div class="hourly-slot"><span class="hour-label">1:00pm</span></div>
+                <div class="hourly-slot"><span class="hour-label">2:00pm</span></div>
+                <div class="hourly-slot"><span class="hour-label">3:00pm</span></div>
+                <div class="hourly-slot"><span class="hour-label">4:00pm</span></div>
+                <div class="hourly-slot"><span class="hour-label">5:00pm</span></div>
+                <div class="hourly-slot"><span class="hour-label">6:00pm</span></div>
+                <div class="hourly-slot"><span class="hour-label">7:00pm</span></div>
+                <div class="hourly-slot"><span class="hour-label">8:00pm</span></div>
+                <div class="hourly-slot"><span class="hour-label">9:00pm</span></div>
+                <div class="hourly-slot"><span class="hour-label">10:00pm</span></div>
+                <div class="hourly-slot"><span class="hour-label">11:00pm</span></div>
+            </div>
+            <div class="day-column">
+                <div class="hourly-slot"><span class="hour-label">6:00am</span></div>
+                <div class="hourly-slot"><span class="hour-label">7:00am</span></div>
+                <div class="hourly-slot"><span class="hour-label">8:00am</span></div>
+                <div class="hourly-slot"><span class="hour-label">9:00am</span></div>
+                <div class="hourly-slot"><span class="hour-label">10:00am</span></div>
+                <div class="hourly-slot"><span class="hour-label">11:00am</span></div>
+                <div class="hourly-slot"><span class="hour-label">12:00pm</span></div>
+                <div class="hourly-slot"><span class="hour-label">1:00pm</span></div>
+                <div class="hourly-slot"><span class="hour-label">2:00pm</span></div>
+                <div class="hourly-slot"><span class="hour-label">3:00pm</span></div>
+                <div class="hourly-slot"><span class="hour-label">4:00pm</span></div>
+                <div class="hourly-slot"><span class="hour-label">5:00pm</span></div>
+                <div class="hourly-slot"><span class="hour-label">6:00pm</span></div>
+                <div class="hourly-slot"><span class="hour-label">7:00pm</span></div>
+                <div class="hourly-slot"><span class="hour-label">8:00pm</span></div>
+                <div class="hourly-slot"><span class="hour-label">9:00pm</span></div>
+                <div class="hourly-slot"><span class="hour-label">10:00pm</span></div>
+                <div class="hourly-slot"><span class="hour-label">11:00pm</span></div>
+            </div>
+            <div class="day-column">
+                <div class="hourly-slot"><span class="hour-label">6:00am</span></div>
+                <div class="hourly-slot"><span class="hour-label">7:00am</span></div>
+                <div class="hourly-slot"><span class="hour-label">8:00am</span></div>
+                <div class="hourly-slot"><span class="hour-label">9:00am</span></div>
+                <div class="hourly-slot"><span class="hour-label">10:00am</span></div>
+                <div class="hourly-slot"><span class="hour-label">11:00am</span></div>
+                <div class="hourly-slot"><span class="hour-label">12:00pm</span></div>
+                <div class="hourly-slot"><span class="hour-label">1:00pm</span></div>
+                <div class="hourly-slot"><span class="hour-label">2:00pm</span></div>
+                <div class="hourly-slot"><span class="hour-label">3:00pm</span></div>
+                <div class="hourly-slot"><span class="hour-label">4:00pm</span></div>
+                <div class="hourly-slot"><span class="hour-label">5:00pm</span></div>
+                <div class="hourly-slot"><span class="hour-label">6:00pm</span></div>
+                <div class="hourly-slot"><span class="hour-label">7:00pm</span></div>
+                <div class="hourly-slot"><span class="hour-label">8:00pm</span></div>
+                <div class="hourly-slot"><span class="hour-label">9:00pm</span></div>
+                <div class="hourly-slot"><span class="hour-label">10:00pm</span></div>
+                <div class="hourly-slot"><span class="hour-label">11:00pm</span></div>
+            </div>
+        </div>
+    </div>
+</div>
 
 </body>
 </html>
